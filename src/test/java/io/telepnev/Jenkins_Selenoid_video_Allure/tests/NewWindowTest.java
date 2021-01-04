@@ -27,6 +27,8 @@ public class NewWindowTest {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
+        //gradle test -Dremote.browser.url=selenoid.autotests.cloud
+
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = "https://user1:1234@" + System.getProperty("remote.browser.url") + ":4444/wd/hub/";
         Configuration.startMaximized = true;
