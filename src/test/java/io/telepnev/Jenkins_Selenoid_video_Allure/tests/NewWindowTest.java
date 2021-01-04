@@ -71,7 +71,7 @@ public class NewWindowTest {
                 ()-> $("#windowButton").click());
         step("Переключаемся на новое окно и проверяем текст 'This is a sample page'",
                 ()-> {switchTo().window(1);
-            $("h1").shouldHave(text("This is a sample page"));});
+            $("h1").shouldHave(text("!!!!!!!!  This is a sample page  !!!!!!"));});
         step("Переключаемся обратно на главную страницу 'Tools QA'",
                 ()-> {switchTo().window(0);
             $(".main-header").shouldHave(text("Browser Windows"));});
